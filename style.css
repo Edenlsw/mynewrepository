@@ -1,0 +1,17 @@
+h1 {
+    font size: 200;
+    text-align: center;
+    
+
+}
+/* Styling the submit button*/
+input[type=submit]{
+    background-color: cornflowerblue;
+    color: darkblue;
+    padding: 12px 20px;
+    border: none
+    border-radius: 28px;
+    cursor: pointer
+}
+   
+
