@@ -1,7 +1,10 @@
 h1 {
-    font size: 200;
+    font-size: 200px;
     text-align: center;
     
+section + p {
+    font-variant: small-caps;
+    }
 
 }
 /* Styling the submit button*/
@@ -9,9 +12,27 @@ input[type=submit]{
     background-color: cornflowerblue;
     color: darkblue;
     padding: 12px 20px;
-    border: none
-    border-radius: 28px;
-    cursor: pointer
+    border: none;
+    border-radius:28px;
+    cursor: pointer;
 }
+* {
+    box-sizing: border-box;
+}
+
+#home {
+    color: darkred;
+}
+
+
+
+main {
+    color: red;
+   }
+
+section p {
+    text-decoration: underline overline;
+   }
+
    
 
