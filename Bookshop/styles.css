@@ -9,6 +9,7 @@ body {
     line-height: 1.4;
 }
 /* changes font colour/ underline of navbar links*/
+
 a {
     color: #333;
     text-decoration: none;
@@ -28,7 +29,6 @@ a {
     text-align: center;
     
 }
-
 /*Books*/
 /* border bottom- creates line to sectione of pieces*/
 .book {
