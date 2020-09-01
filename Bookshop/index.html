@@ -1,125 +1,629 @@
 <!doctype html>
 <html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="favicon.png" rel="icon">
+<link rel="stylesheet" href="stylesheet.css">
+<meta name="theme-color" content="#000">
+<meta name="description" content="eBook">
+<title>Edens Bookstore</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<head>  
-    <meta charset="utf-8">
-    <link href="favicon.png" rel="icon">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="theme-color" content="#000">
-    <meta name="description" content="eBook">
-    <title>Eden's Book Store</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-  
-      <!--The navbar-->
-      <main id="root">
+    <!--the navbar-->
+    <main id="root">
         <section class="container">
           <header class="header">
-            <h1>My e-Book Library</h1>
+            <h1>Edens e-Book Library</h1>
               <nav class="breadcrumb">
-                <img src="logo.png" width="30" height="30" class="logo" alt="Eden">
                 <a href="/">Home</a>  
                 <a href="/about">About</a>  
                 <a class="bookLink" href="/bookcase">Bookcase (0)</a>
                
             </nav>
+      
+          </header>
+        </section>
+
+      <!--The search bar -->  
+    <section class="main-body">
+    <header class="searchBar">
+    <form>
+    <input type="text" placeholder="Enter… " name="search" value="">
+    <input type="submit" value="Find">
+    <label class="label">Time for your next good read</label>
+    </form>
+    </header>
+        <section class="list">
+        <div>
+
         
-      </header>
+    <h2 class="heading">Suggested Reading</h2>
 
-      <!--The search bar for webpage-->
-      <header class="searchBar">
-        <form>
-          <input type="text" placeholder="Enter… " name="search" value="">
-          <input type="submit" value="Find">
-          <br>
-          <label>Time for your next good read</label>
-        </form>
-      </header>
-
-      <!--The start of the book section-->
-      <section class="list">
+    <div class="grid-book">
+           
+        <!--The first book-->
         <div>
-          <h2>Suggested Reading</h2>
-          <div class="book"><img src="http://books.google.com/books/content?id=NhBmDwAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="Queenie">
-      <!--The text about the book-->
-        <article>
-          <h2 title="Queenie">Queenie</h2>
-          <p class="author">by Candice Carty-Williams</p>
-          <p class="price">£0.99</p>
-          <summary class="description">THE SUNDAY TIMES BESTSELLER SHORTLISTED FOR THE COSTA FIRST NOVEL
-              AWARD LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 'Hilarious, compelling, painful,
-              enlightening, honest. I loved it' - Dolly Alderton 'Brilliant, timely, funny,
-              heartbreaking' - Jojo Moyes 'A deliciously funny, characterful, topical ...</summary>
-        </article>  
-        <div>
-            <!--The add to art button-->
-            <button class="addbtn">+ Add</button>
-        </div>
-      </div>
-      <!--the secind book details-->
-        <div class="book"><img 
-            src="http://books.google.com/books/content?id=9j4JGEkCA5cC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" 
-            alt="Ghana Must Go">
-          <div>
-            <h2 title="Ghana Must Go">Ghana Must Go</h2>
-            <p class="author">by Taiye Selasi</p>
-            <p class="price">£2.99</p>
-            <summary class="description">A stunning novel, spanning generations and continents, Ghana Must Go
-              by rising star Taiye Selasi is a tale of family drama and forgiveness, for fans of Zadie
-              Smith and Chimamanda Ngozi Adichie. This is the story of a family -- of the simple,
-              devastating ways in which families tear themselves apart, ...</summary>
-          </div>
-          <div><button class="addbtn">+ Add</button></div>
-        </div>
-      <!--The third book-->
-      <div class="book"><img
-        src="http://books.google.com/books/content?id=djc_DwAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api"
-        alt="The Girl Who Smiled Beads">
-        <div>
-          <h2 title="The Girl Who Smiled Beads">The Girl Who Smiled Bead</h2>
-          <p class="author"by Clemantine Wamariya, Elizabeth Wil></p>
-          <p class="price">£3.99</p>
-          <summary class="description">When Clemantine Wamariya was six years old, her world was torn apart.
-            She didn't know why her parents began talking in whispers, or why her neighbours started
-            disappearing, or why she could hear distant thunder even when the skies were clear. As
-            the Rwandan civil war raged, Clemantine and her sister...</summary>
-        </div>
-        <div><button class="addbtn">+ Add</button></div>
-      </div>
-      <!--The 4th book-->
-      <div class="book"><img
-         src="http://books.google.com/books/content?id=QXHwNEB2CkYC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api"
-          alt="Americanah">
-        <div>
-          <h2 title="Americanah">Americanah</h2>
-          <p class="author">by Chimamanda Ngozi Adichie</p>
-          <p class="Price">£3.49</p>
-          <summary class="description">description">SHORTLISTED FOR THE BAILEY’S WOMEN’S PRIZE FOR FICTION ‘A delicious,
-            important novel’ The Times ‘Alert, alive and gripping’ Independent ‘Some novels tell a
-            great story and others make you change the way you look at the world. Americanah does
-            both.’ Guardian...</summary>
-        </div>
-        <div><button class="addbtn">+ Add</button></div>  
-      </div>
-      <!--The 5th book-->
-      <div class="book"><img
-        src="http://books.google.com/books/content?id=BnudfIm9NMUC&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api"
-        alt="The Good Lord Bird">
-        <div>
-          <h2 title="The Good Lord">The Good Lord</h2>
-          <p class="author">by James McBride</p>
-          <p class="price">£8.38</p>
-          <summary class="description">Soon to be a Showtime limited series starring Ethan Hawke Winner of
-            the National Book Award for Fiction A Washington Post, Publishers Weekly, Oprah Magazine
-            Top 10 Book of the Year From the bestselling author of The Color of Water, Song Yet
-            Sung, Five-Carat Soul, and Kill 'Em and Leave, a James Brow...</summary>
-        </div>
-        <div><button class="addbtn">+ Add</button></div>
-
-      </div>
-
-       
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006754169-10-000_1.jpg" width="150px" height="260px"
+                alt="Cirque Du Freak"> 
+                        <div class="color-card">
+                            <h2 title="Cirque-Du-Freak">Cirque Du Freak</h2>
+                            <p class="author">by Darren Shan</p>
+                            <p class="price">£5.94</p>
+                            <summary class="description">The chilling Saga of Darren Shan, the ordinary schoolboy plunged into the vampire 
+                                world. Darren goes to a banned freak show with his best mate Steve. It's the wonderfully gothic Cirque Du Freak
+                                where weird, frightening half human/half animals appear who interact terrifyingly with the audience.
+                            </summary>
+                        </div>
+                        <div><button class="addbtn">+ Add</button></div>
         
+            </div>
+        </div>
+
+        <!--2nd book-->        
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755135-10-000_1.jpg" width="150px" height="260px"
+                alt="The Vampire's Assistant">
+                <div>
+                    <h2 title="The-Vampire's-Assistant">The Vampire's Assistant</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£5.94</p>
+                    <summary class="description">Darren Shan has been made a half-vampire by Mr Crepsley, but the Cirque Du Freak holds more unpleasant surprises 
+                        for the vampire's assistant. Darren joins the vampire, Mr Crepsley, as his assistant and they return to the 
+                        Cirque Du Freak.
+                    </summary>
+                        
+                        </div>
+                        <div><button class="addbtn">+ Add</button></div>
+
+            </div>
+        </div>
+
+        <!--3rd book--> 
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755142-10-000_1.jpg" width="150px" height="260px"
+                alt="Tunnels of Blood">
+                <div>
+                <h2 title="Tunnels-of-Blood"> Tunnels of Blood</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.00</p>
+                <summary class="description">Darren Shan and Evra Von follow a trail of corpses and confront a foul creature 
+                    of the night. A new enemy or Mr Crepsley? When Mr Crepsley is called upon by the Vampire Generals, Darren
+                    and the snake-boy, Evra Von, leave the Cirque Du Freak and travel with him to the city.
+                </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--4th book--> 
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114412-10-000_1.jpg" width="150px" height="260px"
+                alt="Vampire Mountain">
+                <div>
+                <h2 title="Vampire-Mountain">Vampire Mountain</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.00</p>
+                <summary class="description">Darren Shan, the vampire's assistant, is forced to march to Vampire Mountain where he will be judged by the 
+                    vampire princes. Darren Shan and Mr Crepsley make a long and dangerous trek to the vampire's stronghold in the mountains.
+                </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--5th book--> 
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114405-10-000_1.jpg" width="150px" height="260px
+                alt="Trials of Death>
+                <div>
+                <h2 title="Trials-of-Death">Trials of Death</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.99</p>
+                <summary class="description">This is the fifth title in the compelling and chilling saga of Darren Shan, but the second part in a new trilogy,
+                     following Darren's initiation into the vampire clan. THE SAGA OF DARREN SHAN BOOK 5 Compelled by his loyalty to Mr Crepsley, Darren Shan, 
+                     the vampire's assistant, agrees to prove his worthiness to the vampire clan by undertaking a series of trials. 
+                    </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--6th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007115167-10-000_1.jpg" width="150px" height="260px"
+                alt="The Vampire Prince">
+                <div>
+                <h2 title="The-Vampire-Prince">The Vampire Prince</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.99</p>
+                <summary class="description">Darren Shan, the vampire's assistant, must clear his name and avenge the death of Gavner Purl. Can a half-vampire 
+                    outwit a Vampire Prince? Betrayed by Kurda and reeling from the brutal slaying of Gavner, the vampire's assistant, Darren Shan, finds himself 
+                    branded a traitor and hunted by the vampire clan. 
+                </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--7th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137794-10-000_1.jpg" width="150px" height="260px"
+                alt="Hunters of the Dusk">
+                <div>
+                <h2 title="Hunters-of-the-Dusk">Hunters of the Dusk</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£6.00</p>
+                <summary class="description">Darren Shan, Mr Crepsley and Vancha Marsch, are the hunters of the dusk. Their quarry - the Vampaneze Lord. But
+                    friends old and new may stand in their way... It is six years after Darren was made a Vampire Prince and following a grim prophesy made
+                    by Mr Tiny, the vampires know the ascension of the Vampaneze Lord is at hand.
+                </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--8th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137800-10-000_1.jpg" width="150px" height="260px"
+                alt="Allies-of-the-Night">
+                <div>
+                <h2 title="Allies-of- the Night">Allies of the Night</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£6.00</p>
+                <summary class="description">The quest for the Vampaneze Lord continues for the hunters of the dusk. Darren gets an unwelcome 
+                    taste of reality when he is forced to go back to school and his past catches up with him. Maturing at one fifth the rate of a 
+                    normal human, Darren has the looks of a fifteen year old, even though he is very much older.
+                </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <!--9th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007137817-10-000_1.jpg" width="150px" height="260px"
+                alt="Killers of Dawn">
+                <div>
+                    <h2 title="Killers-of-Dawn">Killers of Dawn</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£7.00</p>
+                    <summary class="description">The allies of the night prepare for the final, deadly confrontation. Darren and Mr Crepsley will get
+                         more than they bargained for when they come face to face with the Vampaneze Lord. The allies of the night prepare for the final,
+                          deadly confrontation. 
+                          
+                    </summary>
+                </div>
+                <div><button class="addbtn">+ Add</button></div>
+
+            </div>
+        </div>
+
+        <!--10th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007159192-10-000_1.jpg" width="150pc" height="260px" alt="The Lake of Souls">
+                <div>
+                    <h2 title="The-Lake-of-Souls">The Lake of Souls</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£7.50</p>
+                    <summary class="description">
+                        The tenth part of the Saga of Darren Shan - one boy's terrifying journey from human to half-vampire to Vampire Prince.
+                        "If you step through after Harkat, you might never come back. Is your friend worth such an enormous risk?" 
+                        
+                    </summary>
+                </div>
+                <div><button class="addbtn">+ Add</button></div>
+
+
+            </div>
+        </div>
+
+        <!--11th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007159208-10-000_1.jpg" width="150px" height="260px" alt="Lord of the Shadows">
+                <div>
+                    <h2 title="Lord-of-the-Shadows">Lord of the Shadows</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£7.99</p>
+                    <summary class="description">The eleventh part of the Saga of Darren Shan - one boy's terrifying journey from human to half-vampire to Vampire Prince.
+                         Darren's going home. Back to where everything started. The town's changed a lot in the years that he's been away - but then, so has Darren. 
+                             
+                    </summary>
+                </div>
+                <div><button class="addbtn">+ Add</button></div>
+    
+            </div>
+        </div>
         
+
+        <!--12th book-->
+        <div>
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007159215-10-000_1.jpg" width="150px" height="260px" alt="Sons of Destiny">
+                <div>
+                    <h2 title="Sons-of-Destinty">Sons of Destiny</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£6.99</p>
+                    <summary class="description">
+                        The twelfth part of the Saga of Darren Shan - one boy's terrifying journey from human to half-vampire to Vampire Prince. Showdown!
+                        The Hunters must face Steve Leopard, to fight for control of the night.
+                    </summary>
+                </div>
+                <div><button class="addbtn">+ Add</button></div>
+
+            </div>
+        </div>
+    </div>
+    </section>   
+        <footer>
+            <div class="footer">
+            <p>Book Store Designed by Eden Lindy</p>
+            </div>
+        </footer>
+    </main>
+</body>
+     
+
+
+<!--
+<br>
+    <div class="grid-container">
+        <div class="row ">
+            <div class="col">
+                <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006754169-10-000_1.jpg" width="150px" height="260px"
+                    alt="Cirque Du Freak"> 
+                            <div>
+                                <h2 title="Cirque Du Freak">Cirque Du Freak</h2>
+                                <p class="author">by Darren Shan</p>
+                                <p class="price">£5.94</p>
+                                <summary class="description">The chilling Saga of Darren Shan, the ordinary schoolboy plunged into the vampire 
+                                    world. Darren goes to a banned freak show with his best mate Steve. It's the wonderfully gothic Cirque Du Freak
+                                    where weird, frightening half human/half animals appear who interact terrifyingly with the audience.</summary>
+                            </div>
+                            <div><button class="addbtn">+ Add</button></div>
+            
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755135-10-000_1.jpg" width="150px" height="260px"
+                    alt="The Vampire's Assistant">
+                    <div>
+                        <h2 title="The Vampire's Assistant">The Vampire's Assistant</h2>
+                        <p class="author">by Darren Shan</p>
+                        <p class="price">£5.94</p>
+                        <summary class="description">Darren Shan has been made a half-vampire by Mr Crepsley, but the Cirque Du Freak holds more unpleasant surprises 
+                            for the vampire's assistant. Darren joins the vampire, Mr Crepsley, as his assistant and they return to the 
+                            Cirque Du Freak.</summary>
+                            <br>
+                    </div>
+                    <div><button class="addbtn>">+ Add</button></div>
+                </div>
+
+                <div class="col">
+                    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755142-10-000_1.jpg" width="150px" height="260px"
+                        alt="Tunnels of Blood">
+                        <div>
+                        <h2 title="Tunnels of Blood"> Tunnels of Blood</h2>
+                        <p class="author">by Darren Shan</p>
+                        <p class="price">£5.00</p>
+                        <summary class="description">Darren Shan and Evra Von follow a trail of corpses and confront a foul creature 
+                            of the night. A new enemy or Mr Crepsley? When Mr Crepsley is called upon by the Vampire Generals, Darren
+                            and the snake-boy, Evra Von, leave the Cirque Du Freak and travel with him to the city. </summary>
+                        </div>      
+                        <div><button class="addbtn">+ Add</button></div>          
+                    </div>
+                </div>
+
+                  <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114412-10-000_1.jpg" width="150px" height="260px"
+                alt="Vampire Mountain">
+                <div>
+                <h2 title="Vampire Mountain">Vampire Mountain</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.00</p>
+                <summary class="description">Darren Shan, the vampire's assistant, is forced to march to Vampire Mountain where he will be judged by the 
+                    vampire princes. Darren Shan and Mr Crepsley make a long and dangerous trek to the vampire's stronghold in the mountains. </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        </div>
+      </div>
+
+<!--tester work
+    <div class="grid-container">
+        <div class="row">
+
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006754169-10-000_1.jpg" width="150px" height="260px"
+                alt="Cirque Du Freak"> 
+                        <div>
+                            <h2 title="Cirque Du Freak">Cirque Du Freak</h2>
+                            <p class="author">by Darren Shan</p>
+                            <p class="price">£5.94</p>
+                            <summary class="description">The chilling Saga of Darren Shan, the ordinary schoolboy plunged into the vampire 
+                                world. Darren goes to a banned freak show with his best mate Steve. It's the wonderfully gothic Cirque Du Freak
+                                where weird, frightening half human/half animals appear who interact terrifyingly with the audience.</summary>
+                        </div>
+                        <div><button class="addbtn">+ Add</button></div>
+        
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755135-10-000_1.jpg" width="150px" height="260px"
+                alt="The Vampire's Assistant">
+                <div>
+                    <h2 title="The Vampire's Assistant">The Vampire's Assistant</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£5.94</p>
+                    <summary class="description">Darren Shan has been made a half-vampire by Mr Crepsley, but the Cirque Du Freak holds more unpleasant surprises 
+                        for the vampire's assistant. Darren joins the vampire, Mr Crepsley, as his assistant and they return to the 
+                        Cirque Du Freak.</summary>
+                        <br>
+                </div>
+                <div><button class="addbtn>">+ Add</button></div>
+            </div>
+        </div>
+
+        <div class="w-100 p-3"></div>
+
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755142-10-000_1.jpg" width="150px" height="260px"
+                alt="Tunnels of Blood">
+                <div>
+                <h2 title="Tunnels of Blood"> Tunnels of Blood</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.00</p>
+                <summary class="description">Darren Shan and Evra Von follow a trail of corpses and confront a foul creature 
+                    of the night. A new enemy or Mr Crepsley? When Mr Crepsley is called upon by the Vampire Generals, Darren
+                    and the snake-boy, Evra Von, leave the Cirque Du Freak and travel with him to the city. </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114412-10-000_1.jpg" width="150px" height="260px"
+                alt="Vampire Mountain">
+                <div>
+                <h2 title="Vampire Mountain">Vampire Mountain</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.00</p>
+                <summary class="description">Darren Shan, the vampire's assistant, is forced to march to Vampire Mountain where he will be judged by the 
+                    vampire princes. Darren Shan and Mr Crepsley make a long and dangerous trek to the vampire's stronghold in the mountains. </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <div class="w-75 p-3"></div>
+
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114405-10-000_1.jpg" width="150px" height="260px"
+                alt="Trials of Death">
+                <div>
+                <h2 title="Trials of Death">Trials of Death</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.99</p>
+                <summary class="description">This is the fifth title in the compelling and chilling saga of Darren Shan, but the second part in a new trilogy,
+                    following Darren's initiation into the vampire clan. THE SAGA OF DARREN SHAN BOOK 5 Compelled by his loyalty to Mr Crepsley, Darren Shan, 
+                    the vampire's assistant, agrees to prove his worthiness to the vampire clan by undertaking a series of trials.</summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007115167-10-000_1.jpg" width="150px" height="260px" 
+                alt="The Vampire Prince">
+                <div>
+                <h2 title="The Vampire Prince">The Vampire Prince</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£5.99</p>
+                <summary class="description">Darren Shan, the vampire's assistant, must clear his name and avenge the death of Gavner Purl. Can a half-vampire 
+                    outwit a Vampire Prince? Betrayed by Kurda and reeling from the brutal slaying of Gavner, the vampire's assistant, Darren Shan, finds himself 
+                    branded a traitor and hunted by the vampire clan. </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+        <div class="w-75 p-3"></div>
+
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137794-10-000_1.jpg" width="150px" height="260px"
+                alt="Hunters of the Dusk">
+                <div>
+                <h2 title="Hunters of the Dusk">Hunters of the Dusk</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£6.00</p>
+                <summary class="description">Darren Shan, Mr Crepsley and Vancha Marsch, are the hunters of the dusk. Their quarry - the Vampaneze Lord. But
+                    friends old and new may stand in their way... It is six years after Darren was made a Vampire Prince and following a grim prophesy made
+                    by Mr Tiny, the vampires know the ascension of the Vampaneze Lord is at hand.</summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+        <div class="col">
+            <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137800-10-000_1.jpg" width="150px" height="260px"
+                alt="Allies of the Night">
+                <div>
+                <h2 title="Allies of the Night">Allies of the Night</h2>
+                <p class="author">by Darren Shan</p>
+                <p class="price">£6.00</p>
+                <summary class="description">The quest for the Vampaneze Lord continues for the hunters of the dusk. Darren gets an unwelcome 
+                    taste of reality when he is forced to go back to school and his past catches up with him. Maturing at one fifth the rate of a 
+                    normal human, Darren has the looks of a fifteen year old, even though he is very much older. </summary>
+                </div>      
+                <div><button class="addbtn">+ Add</button></div>          
+            </div>
+        </div>
+
+
+        
+        </div>
+    </div>
+    <!--Code for the footer
+    <footer>Book Store Designed by Eden Lindy</footer>
+    </main>
+</body>
+-->
+<!--before changed books to grid format
+    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006754169-10-000_1.jpg" width="150px" height="260px"
+        alt="Cirque Du Freak: (The Saga of Darren Shan 1)"> 
+                <article>
+                    <h2 title="Cirque Du Freak: (The Saga of Darren Shan 1)">Cirque Du Freak: (The Saga of Darren Shan 1)</h2>
+                    <p class="author">by Darren Shan</p>
+                    <p class="price">£5.94</p>
+                    <summary class="description">The chilling Saga of Darren Shan, the ordinary schoolboy plunged into the vampire 
+                        world. Darren goes to a banned freak show with his best mate Steve. It's the wonderfully gothic Cirque Du Freak
+                        where weird, frightening half human/half animals appear who interact terrifyingly with the audience. Darren -
+                        a spider freak - 'falls in love' with Madam Octa - an enormous tarantala owned by Mr Crepsley. Darren determines
+                        to steal the spider so that he can train it to perform amazing deeds. But his daring theft goes horribly wrong and
+                         Darren finds himself having to make a bargain with a creature of the night. Something out of the ordinary is set
+                          against the background of children's normal lives to chilling effect. Atmospheric, funny, 
+                          realistic, moving and... terrifying.</summary>
+                </article>
+                <div>
+                <button class="addbtn">+ Add</button>
+                </div>
+
+    </div>
+    
+    <!--the second book
+
+    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755135-10-000_1.jpg" width="150px" height="260px"
+        alt="The Vampire's Assistant,">
+        <div>
+            <h2 title="The Vampire's Assistant,">The Vampire's Assistant,</h2>
+            <p class="author">by Darren Shan</p>
+            <p class="price">£5.94</p>
+            <summary class="description">Darren Shan has been made a half-vampire by Mr Crepsley, but the Cirque Du Freak holds more unpleasant surprises 
+                for the vampire's assistant. Darren joins the vampire, Mr Crepsley, as his assistant and they return to the 
+                Cirque Du Freak. There, Darren makes friends with the snake-boy, Evra Von (who knows what Darren is) and a local boy,
+                Sam, and RV, an eco-warrior and animal lover (who do not). Darren begins to enjoy his life among the Cirque performers
+                the youngest half-vampire in existence, but he defiantly refuses to drink human blood - the whole idea sickens him - 
+                and he tries desperately to cling on to the part of him which is human. Darren comes face to face with pure evil in 
+                the form of Mr Tiny, the leader of the Little People who join the Cirque Du Freak, and who eat anything - 
+                including human flesh. When he discovers animal bones, RV frees the wolf-man from his cage -
+                 and no-one could possibly guess how truly terrible the whole effect would be.</summary>
+        </div>
+        <div><button class="addbtn>">+ Add</button></div>
+    </div>
+
+    <!--3rd book
+
+    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780006755142-10-000_1.jpg" width="150px" height="260px"
+        alt="Tunnels of Blood">
+        <div>
+        <h2 title="Tunnels of Blood"> Tunnels of Blood</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£5.00</p>
+        <summary class="description">Darren Shan and Evra Von follow a trail of corpses and confront a foul creature 
+            of the night. A new enemy or Mr Crepsley? When Mr Crepsley is called upon by the Vampire Generals, Darren
+            and the snake-boy, Evra Von, leave the Cirque Du Freak and travel with him to the city. Whilst there,
+            Darren meets Debbie and his life as a Vampire's Assistant fades into the background - 
+            until corpes are found. Corpses drained of blood... Suspicious of Mr Crepsley's secretive bahaviour, 
+            Darren and Evra shadow him across the city and confront a creature of the night who may be the end 
+            of them all...</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+     <!--4th book
+
+     <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114412-10-000_1.jpg" width="150px" height="260px
+        alt="Vampire Mountain">
+        <div>
+        <h2 title="Vampire Mountain">Vampire Mountain</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£5.00</p>
+        <summary class="description">Darren Shan, the vampire's assistant, is forced to march to Vampire Mountain where he will be judged by the vampire princes. 
+            Darren Shan and Mr Crepsley make a long and dangerous trek to the vampire's stronghold in the mountains. The trek is a test of skill and endurance - 
+            one which sees Darren's vampire nature develop, and a new understanding of the mysterious blue-robed servants of the sinister Mr Tiny. 
+            Gavner Purl makes a welcome return when he joins Darren and Mr Crepsley, but they face more than the cold on their way to the vampire princes - 
+            the vampaneze have been there before them...</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+     <!--5th book
+
+     <div class="book"><img src="https://assets.whsmith.co.uk/product-image/extra-large/9780007114405-10-000_1.jpg" width="150px" height="260px
+        alt="Trials of Death">
+        <div>
+        <h2 title="Trials of Death">Trials of Death</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£5.99</p>
+        <summary class="description">This is the fifth title in the compelling and chilling saga of Darren Shan, but the second part in a new trilogy,
+             following Darren's initiation into the vampire clan. THE SAGA OF DARREN SHAN BOOK 5 Compelled by his loyalty to Mr Crepsley, Darren Shan, 
+             the vampire's assistant, agrees to prove his worthiness to the vampire clan by undertaking a series of trials. Each Trial is set by the 
+             Vampire Princes to test agility, cunning and intelligence. Failure means death. Whilst their attention is focused on Darren, the vampire 
+             clan fail to notice that the vampaneze have infiltrated their mountain stronghold. Who is the traitor helping the vampaneze, and will Darren 
+             survive the trials to oust the vampire's greatest foes? Another atmospheric and terrifying tale from the author of Cirque Du Freak.</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+     <!--6th book
+
+     <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007115167-10-000_1.jpg" width="150px" height="260px
+        alt="The Vampire Prince">
+        <div>
+        <h2 title="The Vampire Prince">The Vampire Prince</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£5.99</p>
+        <summary class="description">Darren Shan, the vampire's assistant, must clear his name and avenge the death of Gavner Purl. Can a half-vampire 
+            outwit a Vampire Prince? Betrayed by Kurda and reeling from the brutal slaying of Gavner, the vampire's assistant, Darren Shan, finds himself 
+            branded a traitor and hunted by the vampire clan. Will Darren's failure to complete the Trials mean banishment for Mr Crepsley and execution 
+            for himself? Or can Darren return to the home of the damned and exact revenge? But Darren comes to realise that there is more than revenge at 
+            stake - the vampire clan must combat the rise of the Vampaneze Lord, or see his ascension
+            mark the end of thousands of years of vampire rule...</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+    <!--7th book
+    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137794-10-000_1.jpg" width="150px" height="260px
+        alt="Hunters of the Dusk">
+        <div>
+        <h2 title="Hunters of the Dusk">Hunters of the Dusk</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£6.00</p>
+        <summary class="description">Darren Shan, Mr Crepsley and Vancha Marsch, are the hunters of the dusk. Their quarry - the Vampaneze Lord. But
+             friends old and new may stand in their way... It is six years after Darren was made a Vampire Prince and following a grim prophesy made
+              by Mr Tiny, the vampires know the ascension of the Vampaneze Lord is at hand. Mr Tiny warns the vampires that there will be only three
+               opportunities for the Vampaneze Lord to be vanquished and only three vampires who may succeed: Vancha Marsch, Larten Crepsley...
+               and Darren Shan. Leaving the enclave of Vampire Mountain, Harkat, Darren and Mr Crepsley are shadowed by a creature of the night, 
+               do battle with the vampaneze, meet the mysterious Evanna and pay a visit to some old friends at the Cirque Du Freak. But no friend can 
+               prevent the bloody trail of bodies - the Vampaneze Lord may be more than a match for the hunters of the dusk.</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+    <!--8th book
+    <div class="book"><img src="https://assets.whsmith.co.uk/product-image/large/9780007137800-10-000_1.jpg" width="150px" height="260px
+        alt="Allies of the Night">
+        <div>
+        <h2 title="Allies of the Night">Allies of the Night</h2>
+        <p class="author">by Darren Shan</p>
+        <p class="price">£6.00</p>
+        <summary class="description">The quest for the Vampaneze Lord continues for the hunters of the dusk. Darren gets an unwelcome 
+            taste of reality when he is forced to go back to school and his past catches up with him. Maturing at one fifth the rate of a 
+            normal human, Darren has the looks of a fifteen year old, even though he is very much older. Vampire Prince and vampaneze killer 
+            he may be, but someone has shopped him to the authorities and it's time for Darren to go back to school. But school is not the 
+            only thing Darren has to come to terms with: faces from the past, the death of a clan member, a clash with a vampire hunter and
+            blood-thirsty vampaneze mean Darren's past is catching up with him - fast. It's time for the allies of the night to join forces. 
+            The hunt is on...</summary>
+        </div>      
+        <div><button class="addbtn">+ Add</button></div>          
+    </div>
+
+    before the grid change-->
+
+    
+
+
+   
